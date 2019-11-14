@@ -1,0 +1,15 @@
+<div class="albums-holder">
+    {{#each artistObject}}
+        <div class="card card-spacer" style="width: 18rem;">
+        {{#each this.images}}
+            {{#if @first}}
+                <img src="{{url}}" class="card-img-top">
+            {{/if}}
+        {{/each}}
+        <div class="card-body">
+            <p class="card-text">{{ name }}</p>
+        </div>
+        <a href="/albums/{{id}}" class="a-card"><button class="btn btn-danger btn-sm">View Albums</button></a>
+        </div>
+    {{/each}}
+</div>
