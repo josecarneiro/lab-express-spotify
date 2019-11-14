@@ -1,0 +1,28 @@
+.first_page {
+    background-image: url(https://static.pexels.com/photos/167605/pexels-photo-167605.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    height: 200px;
+}
+
+.artist_cards {
+    margin: 0 10%;
+}
+
+.nav_bar_tracks {
+    background-color: rgb(38, 38, 38);
+    color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    height: 4em;
+}

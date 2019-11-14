@@ -1,5 +1,7 @@
-<div>
-    <div><img src={{this.images.0.url}} alt=""></div>
-    <div>Name: {{this.name}}</div>
-    <a href="/tracks/{{this.id}}">View Tracks</a>
+<div class="card d-flex justify-content-center align-items-center m-1" style="width: 18rem; height:18rem;">
+    <div class="card-img-top"><img src={{this.images.0.url}} alt="" width=60% class="rounded mx-auto d-block"></div>
+    <div class="text-center bg-secondary w-100 h-100">
+        <div class="card-title text-white mt-2">{{this.name}}</div>
+        <a href="/tracks/{{this.id}}" class="btn btn-info">View Tracks</a>
+    </div>
 </div>

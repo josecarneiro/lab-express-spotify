@@ -1,7 +1,11 @@
-<div>
+<div class="card d-flex justify-content-center align-items-center m-1" style="width: 18rem; height:18rem;">
 
-    <div>Name: {{this.name}} </div>
-    <div><img src={{this.images.2.url}} alt="aqui seria uma imagem"></div>
-    <a href="/albums/{{id}}">Show Albuns</a>
+    <div class="card-img-top"><img src={{this.images.0.url}} alt="picture of artist" width=60%
+            class="rounded mx-auto d-block"></div>
+    <div class="text-center bg-secondary w-100 h-100 align-middle">
+        <div class="card-title text-white mt-3">{{this.name}} </div>
+        <a href="/albums/{{id}}" class="btn btn-primary bg-danger border-danger rounded">Show Albums</a>
+    </div>
+
 
 </div>

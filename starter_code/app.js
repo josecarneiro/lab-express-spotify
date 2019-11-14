@@ -44,7 +44,9 @@ app.get("/artist", (req, res) => {
     .then(data => {
       // ----> 'HERE WHAT WE WANT TO DO AFTER RECEIVING THE DATA FROM THE API'
 
-      res.render("artist", { artists: data.body.artists.items });
+      res.render("artist", {
+        artists: data.body.artists.items
+      });
     })
     .catch(err => {
       console.log("The error while searching artists occurred: ", err);
@@ -61,7 +63,9 @@ app.get("/albums/:id", (req, res, next) => {
 
     .then(data => {
       let arrayOfAlbums = data.body.items;
-      res.render("albums", { albums: arrayOfAlbums });
+      res.render("albums", {
+        albums: arrayOfAlbums
+      });
     })
     .catch(err => {
       console.log("The error while searching albuns occurred: ", err);
@@ -77,7 +81,9 @@ app.get("/tracks/:id", (req, res, next) => {
     .then(data => {
       let albumTracks = data.body.items;
       console.log("we were successfull", data.body.items);
-      res.render("tracks", { tracks: albumTracks });
+      res.render("tracks", {
+        tracks: albumTracks
+      });
       //I AM HERE, NEED TO INTRODUCE TRACKS
     })
     .catch(err => {
