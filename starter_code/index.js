@@ -10,6 +10,8 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
+hbs.registerPartials(__dirname + '/views/partials');
+
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET
@@ -24,7 +26,6 @@ spotifyApi
     console.log('Something went wrong when retrieving an access token', error);
   });
 
-hbs.registerPartials(__dirname + '/views/partials');
 
 app.get('/', (req, res, next) => {
   res.render('index.hbs');
@@ -44,12 +45,13 @@ app.get('/artists', (req, res, next) => {
 });
 
 app.get('/albums/:id', (req, res, next) => {
+  let artistID = req.params.id
   spotifyApi
-  .getArtistAlbums(req.params.id)
+  .getArtistAlbums(artistID)
   .then(data => {
-    const albums = {albums : data.body}
-    res.render('albums', {
-      albums
+    let albums = data.body.items
+    res.render("albums", {
+      albums: albums
     });
   })
   .catch(error => {
@@ -57,6 +59,20 @@ app.get('/albums/:id', (req, res, next) => {
     next(error);
   });
 });
+
+app.get("/tracks/:id", (req, res, next) => {
+  let artistID = req.params.id;
+  spotifyApi
+    .getAlbumTracks(artistID)
+    .then(data => {
+      let albumTracks = data.body.items;
+      res.render("tracks", { tracks: albumTracks });
+    })
+    .catch(err => {
+      console.log("The error while searching albuns occurred: ", err);
+    });
+});
+
 
 app.listen(3000, () =>
   console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊')

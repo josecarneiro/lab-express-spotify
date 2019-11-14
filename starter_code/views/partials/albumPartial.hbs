@@ -1,8 +1,5 @@
-{{!-- <div class="cards-container">
-  <div class="card border-0 text-center" style="width: 18rem;">
-    <img class="card-img-top w-25" src="{{images.0.url}}" alt="Card image">
-    <div class="card-body">
-      <h5 class="card-title">{{name}}</h5>
-      <a href="/{{id}}" class="btn btn-primary">View Tracks</a>
-    </div>
-  </div> --}}
+<div>
+    <div><img src={{this.images.0.url}} alt=""></div>
+    <div>Name: {{this.name}}</div>
+    <a href="/tracks/{{this.id}}">View Tracks</a>
+</div>
