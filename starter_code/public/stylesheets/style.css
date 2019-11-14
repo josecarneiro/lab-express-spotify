@@ -1,0 +1,10 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-image: url('/images/landing.jpg');
+  background-size: cover;
+}
+
+.card {
+  color: black;
+}
