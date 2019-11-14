@@ -87,9 +87,8 @@ app.get("/tracks/:id", (req, res, next) => {
     .getAlbumTracks(req.params.id)
     .then(data => {
       const dataTracks = data.body.items;
-      console.log(dataTracks);
       res.render(__dirname + "/views/tracks", { dataTracks });
-      console.log(dataTracks);
+      //console.log(dataTracks);
     })
     .catch(error => {
       console.log(error);
