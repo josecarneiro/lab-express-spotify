@@ -1,7 +1,14 @@
 <div class="card" style="width: 18rem;">
-  <img src="{{this.images.0.url}}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">{{this.name}}</h5>
-    <a href="/{{this.id}}" class="btn btn-primary">Album</a>
+    <figure>
+    <figcaption>{{this.name}}</figcaption>
+    <audio
+        controls
+        src="/media/examples/t-rex-roar.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+{{!--     <a href="/{{this.id}}" class="btn btn-primary">Album</a> --}}
   </div>
 </div>

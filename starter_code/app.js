@@ -70,19 +70,31 @@ app.get("/album/:post_id", (req, res, next) => {
 
 /* app.post("/tracks/:albumID", (req, res, next) => {
   let albumId = req.params.albumID;
-  spotifyApi.getAlbumTracks(albumId, { limit: 5, offset: 1 }).then(
+  spotifyApi.getAlbumTracks(albumId).then(
     function(data) {
-      const dataTracks = {
-        albums: data.body.items
-      };
+      const dataTracks = data.body.items;
       console.log(dataTracks);
-      res.render("tracks", dataTracks);
+      res.render(__dirname + "/views/tracks", { dataTracks });
     },
     function(err) {
       console.log("Something went wrong!", err);
     }
   );
 }); */
+
+app.get("/tracks/:id", (req, res, next) => {
+  spotifyApi
+    .getAlbumTracks(req.params.id)
+    .then(data => {
+      const dataTracks = data.body.items;
+      console.log(dataTracks);
+      res.render(__dirname + "/views/tracks", { dataTracks });
+      console.log(dataTracks);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
 
 app.listen(3000, () =>
   console.log("My Spotify project running on port 3000 🎧 🥁 🎸 🔊")
