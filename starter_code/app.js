@@ -51,12 +51,26 @@ app.get("/albums/:artistsId", (req, res, next) => {
   console.log(req.params.artistsId);
   spotifyApi
     .getArtistAlbums(req.params.artistsId)
-    .then(albums => {
-      console.log("The received data from the API: ", albums.items);
+    .then(data => {
+      const albums = data.body.items;
+      console.log("The received data from the API: ", albums);
       res.render("albums", { albums });
     })
     .catch(error => {
       console.log("The error while searching artists albums occurred: ", error);
+    });
+});
+
+app.get("/tracks/:id", (req, res, next) => {
+  spotifyApi
+    .getAlbumTracks(req.params.id)
+    .then(data => {
+      const tracks = data.body.items;
+      // console.log("The received data from the API: ", tracks);
+      res.render("tracks", { tracks });
+    })
+    .catch(error => {
+      console.log("Error while loading tracks ", error);
     });
 });
 
