@@ -1,0 +1,13 @@
+<div class="artist-card"> 
+  <div class='photo'>
+    {{#each images}} 
+      {{#if @first}}   
+      <img src={{ url }}>
+      {{/if}}
+    {{/each}}
+  </div>  
+  <div class="details">
+    <p>{{ name }}</p>
+    <button onclick="window.location.href = '/album/{{id}}'">View albuns</button>
+  </div> 
+</div>
