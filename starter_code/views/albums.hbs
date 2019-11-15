@@ -1,5 +1,16 @@
+
+<div class="alb">
+<br>
 {{#each dataAlbum}}
-  <h2>{{name}}</h2>
+  <div class="singArt">
+
   <img src="{{this.images.0.url}}" alt="">
+  <h2>{{name}}</h2>
   <a href="/tracks/{{this.id}}/">View tracks</a>
+  
+  </div>
 {{/each}}
+
+</div>
+
+

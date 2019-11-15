@@ -1,9 +1,25 @@
+<div class="trackListMaster">
+
+<div class='listen'>
+  <h3 id='trckTtl'>Title</h3>
+  <h3 id='trckLstn'>Listen</h3>
+</div>
+<div class="trackList">
+
 {{#each dataTrack}}
 
-<h3>{{this.name}}</h3>
+<div class='track'>
+
+<h4>{{this.name}}</h4>
+
+<div class="mPlayer">
 <audio controls>
   <source src="{{this.preview_url}}" type="audio/mp3"/>
 </audio>
+</div>
 
+</div>
 
 {{/each}}
+</div>
+</div>

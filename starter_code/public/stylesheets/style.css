@@ -1,0 +1,97 @@
+body{
+  background-image: url('https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2017/08/14170333/music-venues-get-started-on-spotify.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  
+}
+
+.searchBar{
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 4em;
+  padding-bottom: 2em;
+}
+
+.searchBar input{
+  width: 30em;
+  height: 2.5em;
+  
+}
+.searchBar button{
+  color: white;
+  
+  font-size: medium;
+  background-color: tomato;
+  border:none;
+  margin:2em 2em 2em 7em;
+  padding: 0.3em 1.3em;
+ 
+}
+
+.alb{
+  background-color: white;
+  padding: 2em;
+  
+  font-size: medium;
+ 
+  width: 500em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.alb img{
+  width: 20em;
+}
+
+.singArt{
+  color: white;
+  text-align: center;
+  margin: 2em;
+  width: 20em;
+  background-color: dimgrey;
+  padding-bottom: 1em;
+}
+
+.singArt a{
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 0.3em 1em;
+  border-radius: 8px;
+  background-color: tomato;
+}
+
+.trackListMaster{
+  width: 500em;
+  background: dimgray;
+}
+
+.listen{
+  margin:0.2em 4em;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2em;
+}
+
+#trckLstn{
+  margin-right: 3em;
+}
+
+.trackList{
+  background: white;
+}
+.track{
+  display: flex;
+  font-size: 0.8em;
+  justify-content: space-between;
+  margin: 1em;
+  background: rgb(241, 241, 241);
+  padding:0.2em 2em;
+  margin:0.2em 0;
+}
