@@ -2,13 +2,18 @@
     margin-top: 0;
     display: flex;
     justify-content: space-evenly;
-    background-color: cornflowerblue;
+    background-color: rgba(200, 232, 186, 0.5);
+}
+
+.nav a {
+    color: white;
 }
 
 body {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/cd/DJ_Pauly_D_Crowd_%288417422634%29.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -25,21 +30,67 @@ a:hover {
     background-color: gray;
 }
 
+.card-body {
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .main-search {
     background-color: rgba(200, 232, 186, 0.5);
     margin: 30% auto;
     display: flex;
     justify-content: center;
-    height: 10rem;
+    height: 15rem;
     align-items: center;
+    border-radius: 1rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+
 }
 
 .main-search input {
-
     height: 4rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .main-search button {
     height: 4rem;
     color: white;
+    background-color: rgba(153, 99, 15, 0.5);
+    border-radius: 5px;
+}
+
+.song-from-album {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+iframe {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.card {
+    border-radius: 1rem;
+    margin: 20px;
+}
+
+.card-bottom {
+    position: absolute;
+    padding-top: 95%;
+    margin-bottom: 1px;
+    padding-bottom: 0;
 }

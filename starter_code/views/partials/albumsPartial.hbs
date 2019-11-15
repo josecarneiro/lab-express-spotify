@@ -1,9 +1,11 @@
 <div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <img class="card-img-top" src={{images.0.url}}>
+    <div class="card-body" style="background-image: url({{images.0.url}})">
+        {{!-- <img class="card-img-top" src={{images.0.url}}> --}}
 
-        <a href="{{external_urls.spotify}}" target="new">
-            <h5 class="card-title"> {{this.name}}</h5>
+        <div class="card-bottom"><a href="{{external_urls.spotify}}" target="new">
+                <h5 class="card-title"> {{this.name}}</h5>
+            </a>
+            <a href="/view_tracks/{{this.id}}" class="btn">See tracks</a></div>
         </a>
     </div>
 </div>

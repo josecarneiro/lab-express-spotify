@@ -1,10 +1,12 @@
 {{!-- // --}}
 <div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <img class="card-img-top" src={{images.0.url}}>
+    <div class="card-body" style="background-image: url({{images.0.url}})">
 
-        <h5 class="card-title">
-            <a href="{{this.external_urls.spotify}}" target="new">{{this.name}}</a></h5>
-        <p class="btn btn-primary"><a href="/albums?search_query={{this.id}}">see albums</a></p>
+
+        <div class="card-bottom">
+            <h5 class="card-title">
+                <a href="{{this.external_urls.spotify}}" target="new">{{this.name}}</a></h5>
+            <p class="btn btn-primary"><a href="/albums?search_query={{this.id}}">see albums</a></p>
+        </div>
     </div>
 </div>
