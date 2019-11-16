@@ -1,0 +1,31 @@
+body{
+    background-image: url('./../images/party-image.jpg');
+    background-size: cover;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 300px;
+}
+
+.input-area {
+    border: 1px solid grey;
+    width: 500px;
+    height: 50px;
+    border-radius: 3px;
+    background-color: rgba(145, 145, 145, 0.500);
+
+}
+
+.submit-button {
+    border: 1px solid grey;
+    width: 100px;
+    height: 50px;
+    border-radius: 3px;
+    align-content: center;
+    background-color: rgba(6, 75, 6, 0.500);
+    color: white;
+    font-size: 16px;
+}
