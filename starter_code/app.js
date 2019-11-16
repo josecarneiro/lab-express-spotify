@@ -37,10 +37,8 @@ app.get('/', (req, res, next) => {
 
 //search bar
 app.get('/artists', (req, res, next) => {
-
   const searchQuery = req.query.search_query;
   const limit = req.query.limit
-
   spotifyApi
     .searchArtists(searchQuery)
     .then(data => {
@@ -56,20 +54,19 @@ app.get('/artists', (req, res, next) => {
   console.log(searchQuery)
 
 });
-
-app.get('/albums', (req, res, next) => {
-  const searchQuery = req.query.search_query;
-  spotifyApi.getArtistAlbums(searchQuery).then(
-    function(data) {
-      console.log('Artist albums', data.body);
-      res.render('albums' , data.body.items);
-    },
-    function(err) {
-      console.error(err);
-    }
-  );
- });
+	
+app.get('/albums/:id', (req, res, next) => {
+  spotifyApi
+  .getArtistAlbums(req.params.id)
+  .then(data => {
+    const dataAlbum = data.body.items;
+    res.render(__dirname + '/views/albums', {dataAlbum});
+    console.log(dataAlbum)
+  })
+  .catch(error => {
+    console.log(error)
+  })
+});
 
 app.listen(3000, () =>
-  console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊')
-);
+  console.log('My Spotify project running on port 3000 🎧 🥁 🎸 🔊'));
