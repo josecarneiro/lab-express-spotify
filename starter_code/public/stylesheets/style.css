@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url('./../images/party-image.jpg');
     background-size: cover;
 }
@@ -28,4 +28,81 @@ body{
     background-color: rgba(6, 75, 6, 0.500);
     color: white;
     font-size: 16px;
+}
+
+/* artist page  */
+
+.artistPartials {
+    display: inline-block;
+    color: white;
+
+}
+
+.partials-image {
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+}
+
+.artist-text {
+    margin-left: 50px;
+}
+
+.view-tracks-button {
+    text-decoration: none;
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* stylings for the albums page */
+.album-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.album-image {
+    width: 0 auto;
+    height: 300px;
+    margin-top: 150px;
+}
+
+.album-name {
+    font-size: 22px;
+    color: white;
+    margin-left: 80px;
+}
+
+.album-link {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+/* songs page styling  */
+
+.songs-container {
+    display: flex;
+    align-content: left;
+    background-color: black;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 30px;
+    justify-content: space-between;
+}
+
+.song-name {
+    font-size: 20px;
+    margin-right: 600px;
 }
