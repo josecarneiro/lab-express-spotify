@@ -54,18 +54,18 @@ app.get('/artists', (req, res, next) => {
   console.log(searchQuery)
 
 });
-	
+
 app.get('/albums/:id', (req, res, next) => {
   spotifyApi
-  .getArtistAlbums(req.params.id)
-  .then(data => {
-    const dataAlbum = data.body.items;
-    res.render(__dirname + '/views/albums', {dataAlbum});
-    console.log(dataAlbum)
-  })
-  .catch(error => {
-    console.log(error)
-  })
+    .getArtistAlbums(req.params.id)
+    .then(data => {
+      res.render('albums', {
+        data
+      });
+    })
+    .catch(error => {
+      console.log(error)
+    })
 });
 
 app.listen(3000, () =>
