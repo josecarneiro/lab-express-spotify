@@ -1,14 +1,15 @@
 <div class="tracks">
-  <div class="track-title">
-    <div class="row header-row">
-      <h1 class="col-lg-8">Title</h1>
-      <h1 class="col-lg-4">Listen</h1>
-    </div>
-    <div class="row track-item">
-      {{#each tracks}}
-        <h2>{{ this.name }}</h2>
-        <audio controls src="{{preview_url}}"></audio>
-      {{/each}}
-    </div>
+  <div class="row header-track">
+    <p class="col-lg-8">Title</p>
+    <p class="col-lg-4">Listen</p>
   </div>
+  <div class="track-container">
+  {{#each tracks}}
+    <div class="row track-item">
+      <p>{{ this.name }}</p>
+      <audio controls src="{{this.preview_url}}"></audio>
+    </div>
+  {{/each}}
+  </div>
+
 </div>
