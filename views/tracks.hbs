@@ -1,0 +1,10 @@
+{{#each listOfTracks}}
+<p>{{name}}</p>
+<p> Track Number:{{track_number}} , Disc Number: {{disc_number}}
+</p>
+<audio controls>
+  <source src="{{preview_url}}" type="audio/ogg">
+  <source src="{{preview_url}}" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+{{/each}}
