@@ -12,5 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "hbs": "^4.1.0",
+    "spotify-web-api-node": "^4.0.0"
   }
 }
