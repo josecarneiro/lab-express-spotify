@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* #main_header {
+  min-height: 100vh;
+  background: url('../images/spotify-background.jpeg');
+  background-position: center;
+  background-size: cover;
+} */
+
+.main_box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 40%);
+  width: 50%;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form {
+  border-radius: 2rem;
+  padding: 1rem 12rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-form {
+  margin: 0 auto;
+  color: white;
+  border: none;
+  padding: 1rem;
+  background-color: rgba(245, 69, 69, 0.8);
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-form:hover {
+  color: red;
+  border: 1px solid red;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .input-form {
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/*Results*/
+.search-results {
+  display: flex;
+}
+
+.search-result img {
+  width: 30rem;
+  height: 32rem;
+}
+
+.search-result {
+  margin: 5rem 2rem;
+  background-color: #4d4d4d;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.search-result h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.h2btn-search {
+  padding-bottom: 2rem;
+}
+
+.search-result a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-artist-search {
+  padding: 0.2rem;
+  color: white;
+  border: none;
+  background-color: rgba(245, 69, 69, 0.8);
+  outline: none;
+  border-radius: 8%;
+}
