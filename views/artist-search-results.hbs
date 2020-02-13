@@ -1,0 +1,9 @@
+<div class="albumSearchContainer">
+    {{#each artists}}
+        <div class="albumSearch">
+        <img src={{images.1.url}} alt="Dont show the image :(">
+        <h2>{{name}}</h2>
+        <button><a href="/albums/{{this.id}}">View Albums</a></button>
+        </div>
+    {{/each}}
+</div>
