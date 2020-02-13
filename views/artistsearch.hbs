@@ -1,0 +1,12 @@
+<h1>Search results go here</h1>
+
+{{#each listOfartists}}
+  
+  <img src={{ images.0.url }} alt={{ name }} />
+
+  <p>{{ name }}</p>
+  <a href="/albums/{{ id }}">
+    <button type="button" class="btn btn-primary">View Albums</button>
+  </a>
+
+{{/each}}
