@@ -1,0 +1,11 @@
+ {{#each artist}}
+  {{ name }}
+  {{#each images}}
+  {{#if @first}}
+  <img src= "{{url}}">
+  <button>
+    <a href="/albums/someArtistIdGoesHere">View Albums</a>
+  </button>
+  {{/if}}
+  {{/each}}
+  {{/each}}
