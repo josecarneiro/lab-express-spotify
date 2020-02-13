@@ -56,12 +56,12 @@ app.get('/albums/:id', (request, response, next) => {
 
 app.get('/tracks/:albumId', (request, response, next) => {
   const track = request.params.albumId;
-  console.log(track);
+
   spotifyApi
     .getAlbumTracks(track)
     .then(data => {
       const tracks = data.body.items;
-
+      console.log(tracks);
       response.render('tracks', { tracks });
     })
     .catch(err => console.log('The error while searching artists occurred: ', err));
