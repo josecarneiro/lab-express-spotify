@@ -1,23 +1,35 @@
 body {
+  margin: 0;
+
   display: flex;
   font-family: sans-serif;
-
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
 
 .background {
+  display: flex;
+  background-color: grey;
   background-image: url(/images/spotify-background.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: aliceblue;
+}
+h1 {
+  font-size: 3em;
+}
+.miniBox {
+  background-color: rgba(105, 105, 105, 0.8);
+  padding: 50px 100px;
 }
 .form {
-  padding: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,31 +39,47 @@ body {
   height: 50px;
   width: 500px;
 }
+.interfaceButton {
+  justify-content: center;
+  background-color: rgba(255, 128, 114, 0.8);
+  height: 50px;
+  width: 250px;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
 .button {
   display: flex;
   text-decoration: none;
-  color: black;
-  font-size: 0.5em;
+  color: aliceblue;
+
   background-color: rgba(255, 128, 114, 20);
-  height: 30px;
+  height: 50px;
   width: 200px;
   align-items: center;
   justify-content: center;
   align-content: center;
+  text-align: center;
+  font-size: 1em;
 }
 .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 .card {
+  background-color: grey;
+  color: aliceblue;
+  overflow-wrap: break-word;
   font-size: 2em;
   align-items: center;
   margin: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
+  text-align: center;
   padding: 30px;
+  width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.7s;
   border-radius: 10px; /* 5px rounded corners */
@@ -62,4 +90,41 @@ img {
   width: 200px;
   height: 250px;
   border-radius: 5px 5px 0 0;
+}
+.list {
+  margin-top: 0;
+  list-style: none;
+}
+.bar {
+  margin-top: 0px;
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(47, 43, 43, 1);
+  padding: 15px 40px;
+  font-size: 2em;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  color: aliceblue;
+}
+.space {
+  margin-top: 85px;
+}
+.songs {
+  color: aliceblue;
+  width: 700px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: gray;
+  padding: 15px 40px;
+  border-radius: 20px 20px;
 }

@@ -1,6 +1,10 @@
+<ul class="list">
+  
+<li class="bar"><span>Title</span><span>Listen</span></li>
+<li class="space"></li>
 {{#each tr}}
-
-<figure>
+<li>
+<figure class="songs">
     <figcaption>Listen to {{name}}</figcaption>
     <audio
         controls
@@ -9,5 +13,6 @@
             <code>audio</code> element.
     </audio>
 </figure>
-
+</li>
 {{/each}}
+</ul>
