@@ -1,3 +1,7 @@
+/* * {
+  outline: 1px red solid;
+} */
+
 body {
   font-family: sans-serif;
   margin: 0 auto;
@@ -58,7 +62,8 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80%;
+  max-width: 70%;
+  margin: auto;
 }
 
 .artist_info {
@@ -66,4 +71,9 @@ body {
   flex-direction: column;
   margin-bottom: 20px;
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.artist_info p {
+  max-width: 200px;
 }
