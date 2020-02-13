@@ -1,9 +1,9 @@
 {{#each listOfArtist}}
 
 <p>{{name}}</p>
-
 <img src="{{images.0.url}}" alt="">
-<button>View Albuns</button></a>
+{{!-- <form action="/album/{{artistId}}" method="GET">
+  <button type="submit">View Albuns</button></form> --}}
+<a href="/albums/{{id}}">View Albums </a>
 
 {{/each}}
-{{!-- <a href="/albums/someArtistIdGoesHere"> --}}
