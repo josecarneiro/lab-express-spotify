@@ -55,7 +55,6 @@ app.get('/albums/:artistId', (request, response) => {
         const albumsArtist = {
             albums : data.body.items
         }
-        console.log(dataA);
         response.render('albums', albumsArtist);
     })
     .catch(err => console.log('The error while searching artists occurred: ', err));
@@ -63,14 +62,15 @@ app.get('/albums/:artistId', (request, response) => {
 
 app.get('/tracks/:albumId', (request, response) => {
     const albumId = request.params.albumId;
-    console.log(albumId);
+
     spotifyApi
     .getAlbumTracks(albumId)
     .then(data => {
         const dataAlbum = {
             musicAlbum : data.body.items
         }
-        response.render('albums', dataAlbum);
+        console.log(dataAlbum);
+        response.render('tracks', dataAlbum);
     })
     .catch(err => console.log('The error while searching artists occurred: ', err));
 });
