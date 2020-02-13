@@ -1,0 +1,19 @@
+<h1>Artist Tracks goes here</h1>
+
+<ul class="search-results">
+  {{#each trackInfo}}
+<li>
+
+
+  <audio controls="controls">
+  {{ name }} 
+  <source src=" {{ preview_url  }} " />
+</audio>
+
+
+</li>
+  {{/each}}
+</ul>
+
+
+
