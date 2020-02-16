@@ -1,0 +1,18 @@
+<ul class="list">
+  
+<li class="bar"><span>Title</span><span>Listen</span></li>
+<li class="space"></li>
+{{#each tr}}
+<li>
+<figure class="songs">
+    <figcaption>Listen to {{name}}</figcaption>
+    <audio
+        controls
+        src="{{preview_url}}">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+</li>
+{{/each}}
+</ul>

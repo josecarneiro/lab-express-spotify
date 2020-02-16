@@ -1,0 +1,13 @@
+<ul class="cards">
+{{#each al}}
+<li class="card">
+{{name}}
+{{#each images}}
+{{#if @first}}
+<img src="{{url}}">
+{{/if}}
+{{/each}}
+<a class ="button" href="/albums/tracks/{{id}}"type="submit">View Tracks</a>
+</li>
+{{/each}}
+</ul>
