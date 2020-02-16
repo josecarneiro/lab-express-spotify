@@ -1,0 +1,20 @@
+
+
+{{#each listOfartists}}
+
+  <div class="nameOfartist">
+    {{#each images}}
+      {{#if @first}}
+        <img class="imgArtist" src={{ url }}  />
+      {{/if}}
+    {{/each}}
+    <p>{{ name }}</p>
+  </div>
+  
+
+
+  <a href="/albums/{{ id }}">
+    <button type="button" class="btn">View Albums</button>
+  </a>
+
+{{/each}}

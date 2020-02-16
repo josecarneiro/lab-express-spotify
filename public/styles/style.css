@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica,Arial,sans-serif;
+  background-color: black;
+  overflow-x: hidden;
+  background: url('/images/capa.png'),
+              url('/images/ruido.png'),
+              linear-gradient(50deg,#ff4169,#7c26f8);
+background-attachment: fixed;
+}
+
+/* -- Barra de Navegação  -- */
+.navbar-transparente {
+  
+	padding: 15px 0px;
+	background-color: rgba(0,0,0,0.6);
+	border: none;
+}
+
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('/images/spotify.svg') no-repeat;
+	background-size: contain; /*imagem de fundo terá os mesmos tamanhos indicados*/
+	color: transparent;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.nav-link, footer .nav a{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-black a:hover, footer .nav a:hover {
+  color: #9bf0e1 ;
+  background: none;
+}
+
+
+/*HOME*/
+
+.capa {
+  display: table;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10% 0;
+
+}
+
+.texto-capa {
+	text-align: center;
+  color:white;
+  font-family: inherit;
+  font-size: large;
+	display: table-cell;
+  vertical-align: middle;
+  margin:0 auto;
+}
+
+.texto-capa h1{
+  font-size: 7em;
+  font-weight: 700;
+}
+
+/* -- Botoes  -- */
+.texto-capa a{
+  margin: 1em 2em;
+}
+
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  transition: background 0.4s,color 0.4s;
+  padding: 0.5em 4.5em;
+}
+
+.btn-roxo{
+	background-color: #7c25f8;
+
+}
+
+.btn-roxo:hover{
+	background-color: #6207e3;
+	color:white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+
+}
+
+.btn-branco:hover{
+	background-color: white;
+	color:black;
+}
+
+.home{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.borderForm{
+  margin: auto 0;
+  background-color: rgba(255,255,255,0.5);
+  width: 35em;
+  height: 20em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.borderForm form{
+  text-align: center;
+  margin: 5em auto;
+}
+
+
+/*IMG ARTIST*/
+.imgArtist{
+  width: 15em;
+  height: auto;
+
+}
+
+.nameOfartist{
+  background-color: red;
+}
+
+
