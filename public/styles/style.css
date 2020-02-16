@@ -6,6 +6,43 @@ body{
   overflow-x: hidden;
 }
 
+/* -- Barra de Navegação  -- */
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+	border: none;
+}
+
+.img-logo {
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('/images/spotify.svg') no-repeat;
+	background-size: contain; /*imagem de fundo terá os mesmos tamanhos indicados*/
+	color: transparent;
+}
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.nav-link, footer .nav a{
+  color: red;
+}
+
+.navbar-black a:hover, footer .nav a:hover {
+  color: #9bf0e1 ;
+  background: none;
+}
+
+
 /*HOME*/
 .home{
   width: 100%;
