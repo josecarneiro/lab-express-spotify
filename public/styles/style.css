@@ -112,6 +112,30 @@ background-attachment: fixed;
 	background-color: white;
 	color:black;
 }
+/*RECURSOS*/
+
+#recursos{
+	padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  color: white;
+  background-color: rgba(0,0,0,0.8);
+ 
+  
+}
+
+#recursos h3{
+  color:#9bf0e1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.rotacionar{
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
 
 .home{
   width: 100%;

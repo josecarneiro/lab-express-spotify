@@ -1,15 +1,41 @@
 {{> intro}}
 
+<section  id="recursos">
 
-<section class="home">
-  <div class="borderForm">
-    <form class="form-group rounded-0" action="/artist-search" method="GET">
-        <input type="text" name="term" class="form-control form-control rounded-0" id="inputArtist" placeholder="Search for an artist!">
-        <button type="submit" class="btn mb-2 rounded-0">Search for an Artist</button>
-    </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <h3>Buscar</h3>
+            <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
+
+            <h3>Navegar</h3>
+            <p>Veja os novos lançamentos, o que está bombando nas paradas e 
+              as melhores playlists para o seu momento.</p>
+
+            <h3>Descobrir</h3>
+            <p>Curta músicas novas toda segunda-feira com uma playlist
+              personalizada para você. Ou relaxe e curta uma das rádios.</p>
+      </div>
+
+      <div class="col-8">
+        <form action="/artist-search" method="GET">
+          <div class="form-group row">
+          
+            <div class="col-sm-11">
+              <input type="text" name="term" class="form-control rounded-pill" id="inputArtist" placeholder="Search for an artist!">
+            </div>
+          </div>
+          <button type="submit" class="btn rounded-pill btn-custom btn-roxo">Search for an Artist</button>
+        </form>
+
+      </div>
+    </div>
   </div>
-  
 </section>
+ 
+
+
+
 
 
 
